@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var pantryUrl = 'https://api.yummly.com/v1/api/recipes?_app_id=d8ff7ac7&_app_key=aa3cae3ea1bda4bcb576ad14eb83bcac&requirePictures=true';
+    var pantryUrl = 'https://api.yummly.com/v1/api/recipes?_app_id=d8ff7ac7&_app_key=a07332a882b586c48dadbbd230308af1';
 
     // highlight the search bar
     $('body').find('.search input').focus();
@@ -15,7 +15,7 @@ $(document).ready(function () {
                 $.each(recipe, function () {
                     var recipeName = this.recipeName,
                         recipeId = this.id,
-                        recipeUrl = 'https://www.yummly.com/recipe/' + recipeId,
+                        recipeUrl = 'http://www.yummly.com/recipe/' + recipeId,
                         recipeObject = this.imageUrlsBySize,
                         recipeArray = Object.keys(recipeObject),
                         recipeArrayLength = recipeArray.length,

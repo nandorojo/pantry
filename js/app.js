@@ -15,7 +15,7 @@ $(document).ready(function () {
                 $.each(recipe, function () {
                     var recipeName = this.recipeName,
                         recipeId = this.id,
-                        recipeUrl = 'http://www.yummly.com/recipe/' + recipeId,
+                        recipeUrl = 'https://www.yummly.com/recipe/' + recipeId,
                         recipeObject = this.imageUrlsBySize,
                         recipeArray = Object.keys(recipeObject),
                         recipeArrayLength = recipeArray.length,

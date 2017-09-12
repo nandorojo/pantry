@@ -1,0 +1,33 @@
+/* Abstracts -> variables partial */
+$color: (
+    'primary': red,
+    'secondary': blue,
+    'background': white,
+    'foreground': #00274c
+);
+
+$color-primary: map-get($color, 'primary');
+$color-secondary: map-get($color, 'secondary');
+$color-tertiary: #484848;
+$color-quadruple: #2bde73;
+$color-success: green;
+$color-failure: red;
+$color-background: map-get($color, 'background');
+$color-foreground: map-get($color, 'foreground');
+$color-accent: lighten($color-foreground, 5%);
+
+$selection: (
+    'background': map-get($color, 'secondary'),
+    'color': map-get($color, background)
+);
+
+$font: (
+    'familyPrimary': #{'soleil', sans-serif},
+);
+
+$configureWidth: 350px;
+$configureHeaderHeight: 75px;
+
+$padding: 15px;
+
+$inputPadding: 10px;

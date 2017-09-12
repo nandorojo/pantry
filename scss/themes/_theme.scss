@@ -1,0 +1,9 @@
+/* Themes -> Theme partial */
+
+// General Styles
+.recipe {
+    display: flex;
+    & > div:nth-of-type(1) {
+        flex-grow: 1;
+    }
+}

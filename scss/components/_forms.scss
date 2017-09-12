@@ -1,0 +1,14 @@
+textarea, input {
+    padding: 10px;
+    width: 100%;
+    color: $color-foreground;
+    border: none;
+    line-height: 1.5em;
+    &::placeholder {
+        color: lighten(gray, 40%);
+    }
+    &:focus {
+        outline: none;
+    }
+    border-radius: 5px;
+}

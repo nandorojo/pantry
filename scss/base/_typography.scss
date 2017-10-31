@@ -24,11 +24,11 @@ h1 {
 ::-moz-selection {
     /* Code for Firefox */
     color: map-get($selection, 'background');
-    background: map-get($selection, 'color');
+    background: transparent;
 }
 
 ::selection {
     /* Code for Firefox */
     color: map-get($selection, 'background');
-    background: map-get($selection, 'color');
+    background: transparent;
 }

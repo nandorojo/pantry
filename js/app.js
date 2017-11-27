@@ -54,20 +54,4 @@ $(document).ready(function () {
         console.log(searchLink);
         getRecipes(searchLink);
     });
-    // go to correct (in-page) link when you click on a link
-    $('a[href$=".html"]').on('click', function (e) { // simulate page changes without actually changing page
-
-        var $currentPage = $('page.active'),
-            $link = $(this).attr('href').replace('.html', ''),
-            $targetPage = $('#' + $link),
-            $this = $(this);
-        if ($targetPage.length != 0) {
-            e.preventDefault(); // if the <page> exists
-            if ($this.attr('target') != '_blank' && !$targetPage.hasClass('active')) { // if it isn't target blank or the current page
-                $('page').removeClass('active');
-                $targetPage.addClass('active');
-            }
-        };
-        window.location.hash = '#' + $link;
-    });
 });
